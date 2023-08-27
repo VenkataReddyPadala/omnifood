@@ -1,0 +1,209 @@
+/* ************************ */
+/* General Components */
+/* ************************ */
+
+.container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+    
+}
+
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem ;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4,1fr);
+}
+
+.grid--5-cols {
+    grid-template-columns: repeat(5,1fr);
+}
+
+.grid--footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.grid--center-v {
+    align-items: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    font-weight: 700;
+    line-height: 1.05;
+    color: #333;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+    margin-top: 0;
+    margin-bottom: 3.2rem;
+}
+
+.sub-heading {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+}
+.heading-secondary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin:0 0 9.6rem 0;
+
+}
+
+.heading-tertiary {
+    font-size: 3rem;
+    line-height: 1.2em;
+    margin: 0 0 3.2rem 0;
+    font-weight: 700;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    display: inline-block;    
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px ;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.3s;
+}
+
+
+
+.btn-outline:link, 
+.btn-outline:visited {
+    background-color: #fff; 
+    color: #555;
+    /* border: 2px solid #fff;  It will make content move when hovered so dont use*/ 
+    
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #cf711f;
+    
+}
+
+
+
+.btn-outline:hover,
+.btn-outline:active {
+    background-color: #fdf2e9;
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
+/* .btn-outline:focus,
+.btn-full:focus {
+    outline: none;
+} */
+
+.btn--form {
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 1.2rem;
+    transition: all 0.4s;
+}
+
+.btn--form:hover,
+.btn--form:active {
+    background-color: #fff;
+    color: #45260a;
+}
+
+.link:link,
+.link:visited {
+    color: #e67e22;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px;
+    border-bottom: 1px solid currentColor;
+    transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+
+}
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
+
+.margin-right-sm {
+    margin-right: 1.6rem !important;
+}
+
+.margin-botton-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+    text-align: center;
+}
+
+strong {
+    font-weight: 600;
+}
+
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #e67e22;
+}
+
+.list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    line-height: 1.2;
+}
